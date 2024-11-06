@@ -5,17 +5,24 @@ import './Search.css';
 function Search() {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
-  const artists = ["aespa", "BLACKPINK", "QWER", "IU", "DAY6", "NewJeans", "LE SSERAFIM", "KISS OF LIFE", "RIIZE"];
+  const artists = ["aespa", "LE SSERAFIM", "QWER", "IU", "DAY6", "NewJeans", "G-DRAGON", "KISS OF LIFE", "RIIZE"];
 
   const handleSearch = () => {
     console.log('Search button clicked with term:', searchTerm);
     navigate(`/searchResult?query=${searchTerm}`);
   };
 
+  // Enter 키 쳤을 때 검색
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <section className="section3" id="search-section">
       <div className='second-container'>
-        <h2 className='second-container-title'>검색</h2>
+        <h2 className='second-container-title'>제목 또는 아티스트 검색</h2>
         <div className='search-container'>
           <input
             type="text"
@@ -23,6 +30,7 @@ function Search() {
             placeholder="검색어를 입력하세요"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <button className="search-button" onClick={handleSearch}>검색</button>
         </div>
