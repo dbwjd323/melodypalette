@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './ProfilePopup.css';
 import { useAuth } from '../../contexts/AuthContext';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const ProfilePopup = ({ isOpen, onClose, onLogout }) => {
   const { userProfile, logout } = useAuth();
@@ -30,13 +30,14 @@ const ProfilePopup = ({ isOpen, onClose, onLogout }) => {
         <button className="close-button" onClick={onClose}>X</button>
         <h2 className='profile'>프로필</h2>
         <div className="profile-info">
-          <img 
-            src={userProfile?.images?.[0]?.url || '/images/profile.png'} 
-            alt="Profile" 
-            className="profile-image" 
+          <img
+            src={userProfile?.images?.[0]?.url || '/images/profile.png'}
+            alt="Profile"
+            className="profile-image"
           />
           <div className="profile-details">
             <p className="profile-username">{userProfile?.display_name || '정보 없음'}</p>
+            <p className='profile-useremail'>{userProfile?.email || '정보 없음'}</p>
           </div>
         </div>
         <Link to="/likedSongs" className='link'>좋아요 표시한 곡</Link>
