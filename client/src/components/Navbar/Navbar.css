@@ -33,7 +33,7 @@
   font-size: 1.5rem;
   margin-left: 1rem;
   cursor: pointer;
-  background: linear-gradient(to right, #3498db, #7bf38d);
+  background: #3498db;
   -webkit-background-clip: text; 
   background-clip: text;
   color: transparent; 
