@@ -9,7 +9,6 @@ function Main() {
   const navigate = useNavigate();
 
   const handleRecommendButtonClick = () => {
-    console.log('Recommend button clicked');
     navigate('/RecommendationOptions');
   };
 
