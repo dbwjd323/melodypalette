@@ -26,6 +26,8 @@ function LoginPopup({ isOpen, onClose }) {
       <div className="login-popup">
         <button className="close-button" onClick={onClose}>X</button>
         <h2 className='login'>로그인</h2>
+        <p>Melodypalette는 스포티파이 계정과 연동해서 사용할 수 있습니다</p>
+        <img src="/images/spotify.png" alt="spotifylogo" />
         <button className="login-button" onClick={handleSpotifyLogin}>
           스포티파이로 로그인
         </button>

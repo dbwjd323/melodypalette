@@ -18,13 +18,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   width: 350px;
-  height: 500px;
+  height: 400px;
   z-index: 1001;
   overflow-y: auto;
   display: flex;
   flex-direction: column; 
   align-items: center; 
-  justify-content: center;
 }
 
 .close-button {
@@ -40,6 +39,18 @@
 
 .login {
   text-align: center;
+  margin-top: 15px;
+}
+
+.login-popup p {
+  color: #7f8c8d;
+  margin-top: 20px;
+}
+
+.login-popup img {
+  width: 250px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .login-button {
