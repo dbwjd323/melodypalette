@@ -29,10 +29,11 @@
 }
 
 .intro-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
   color: #58a8fe;
-  padding: 1.25rem;
-  margin-top: 6.25rem;
+  padding: 2rem;
+  margin-top: 2rem;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -48,8 +49,17 @@
   }
 }
 
+.text-container {
+  max-width: 500px;
+  margin-top: 4rem;
+}
+
+.text-container h3 {
+  font-size: 25px;
+}
+
 .intro-text {
-  font-size: 1.56rem;
+  font-size: 1rem;
   color: #535878;
 }
 
@@ -70,6 +80,12 @@
 .recommend-button:hover {
   transform: scale(1.1);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.intro-container img {
+  width: 360px;
+  height: auto;
+  margin-left: 60px;
 }
 
 #features-section {
@@ -159,15 +175,6 @@
 .feature-item:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-/* 애니메이션 효과 */
-.feature-item:nth-child(odd) {
-  animation: fadeIn 1s ease-out 0.3s forwards;
-}
-
-.feature-item:nth-child(even) {
-  animation: fadeIn 1s ease-out 0.5s forwards;
 }
 
 @keyframes fadeIn {

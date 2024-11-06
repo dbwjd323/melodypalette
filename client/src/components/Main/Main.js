@@ -18,9 +18,12 @@ function Main() {
       <Navbar />
       <section className="section1" id="main-section">
         <div className="intro-container">
-          <h3>Melodypalette에서 새로운 음악을 만나보세요</h3>
-          <p className='intro-text'>음악 취향을 분석하여, 당신에게 딱 맞는 곡을 추천해드립니다.</p>
-          <button className="recommend-button" onClick={handleRecommendButtonClick}>음악 추천받기</button>
+          <div className="text-container">
+            <h3>Melodypalette에서 새로운 음악을 만나보세요</h3>
+            <p className="intro-text">음악 취향을 분석하여, 당신에게 딱 맞는 곡을 추천해드립니다.</p>
+            <button className="recommend-button" onClick={handleRecommendButtonClick}>음악 추천받기</button>
+          </div>
+          <img src="/images/main.png" alt="main" />
         </div>
       </section>
 
