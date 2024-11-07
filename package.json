@@ -1,1 +1,6 @@
-{}
+{
+  "scripts": {
+  "build": "react-scripts build"
+}
+
+}
