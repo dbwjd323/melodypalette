@@ -6,15 +6,17 @@
 사용자의 취향과 관심사에 기반하여 맞춤형 음악 추천을 제공해 사용자가 쉽고 빠르게 원하는 음악을 찾을 수 있도록 도와줄 것입니다.<br><Br>
 
 ## 🕰️개발 기간
-2024.05.28 ~ 진행중<br><br>
+2024.05.28 ~ 2024.11.12<br><br>
 
 ## ⚙️개발 언어
-- Frontend: **React**
-- Backend: **Node.js**(사용 예정)
-- Server: **Express**
-- Database: **MongoDB** (사용 예정)
-- Algorithm: 음악 추천 알고리즘 - 콘텐츠 기반 필터링(코사인 유사도 사용)
-- Data: Spotify API 활용해 음악 데이터 특성
+- - Backend
+    - Node.js, Express.js
+- Frontend:
+    - React, CSS
+- Database
+    - MongoDB (Spotify 사용자 권한코드, 사용자 데이터, 사용자 플레이리스트, 선호도)
+- API Integration
+    - Spotify Web API, Web Playback SDK
 
 ## 📍주요 기능
 - 계정 생성 및 로그인
@@ -29,6 +31,9 @@
 
 ## start
 ```
-cd client
+cd ./meldoypalette/client
+npm start
+// 서버 오픈
+cd ./melodypalette/server
 npm start
 ```
